@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Zoom / Meet Scheduler",
+  "version": "1.0.0",
+  "description": "ZoomやGoogle Meetを指定時間に自動で開く",
+  "permissions": ["alarms", "tabs", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
