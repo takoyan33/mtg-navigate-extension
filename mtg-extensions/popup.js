@@ -90,7 +90,7 @@ async function loadSchedules() {
     div.innerHTML = `
       <div><strong>${item.title}</strong></div>
       <div>${date}</div>
-      <div style="word-break: break-all;">${item.url}</div>
+      <div style="word-break: break-all;"><a href=${item.url}>${item.url}</a></div>
       <div class="item-actions">
         <button data-edit="${id}">編集</button>
         <button class="danger" data-delete="${id}">削除</button>
